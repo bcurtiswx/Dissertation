@@ -1,0 +1,257 @@
+%%
+%% GMU LaTeX PhD Dissertation Format Template
+%%
+%% Developed by:
+%%      Daniel O. Awduche and Christopher A. St. Jean
+%%      Communications and Networking Lab
+%%      Dept. of Electrical and Computer Engineering
+%%
+%% Notes on usage can be found in the accompanying USAGE_NOTES.txt file.
+%%
+%%**********************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either
+%% expressed or implied; without even the implied warranty of
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE!
+%% User assumes all risk.
+%% In no event shall any contributor to this code be liable for any damages
+%% or losses, including, but not limited to, incidental, consequential, or
+%% any other damages, resulting from the use or misuse of any information
+%% contained here.
+%%**********************************************************************
+%%
+%% $Id: GMU_dissertation_template.tex,v 1.7 2007/05/02 02:20:38 Owner Exp $
+%%
+
+\documentclass[11 pt]{report}
+
+%%  The file ``gmudissertation.sty''  is the GMU latex style file and
+%%   should be placed in the same directory as your LaTeX files
+\usepackage{gmudissertation}
+
+%%
+%% other packages that need to be loaded
+%%
+\usepackage{graphicx}                    %   for imported graphics
+\usepackage{amsmath}                     %%
+\usepackage{amsfonts}                    %%  for AMS mathematics
+\usepackage{amssymb}                     %%
+\usepackage{amsthm}                      %%
+\usepackage[normalem]{ulem}              %   a nice standard underline package
+\usepackage[noadjust,verbose,sort]{cite} %   arranges reference citations neatly
+\usepackage{setspace}                    %   for line spacing commands
+\usepackage{subfigure}						 %   FIGURE PLACEMENT
+\usepackage{natbib}
+\usepackage{microtype}
+
+%% The file ``mydissertationabbrev.sty'' is an (optional) personalized file that
+%% may contain any and all LaTeX command (re)definitions that will be used
+%% throughout the document
+%\usepackage{mydissertationabbrev}
+
+\beforedoc
+
+\begin{document}
+
+%% In this section, all of the user-specific fields to be used in the
+%% title pages are set
+\title{Validation of \\ Magnetospheric Magnetohydrodynamic Models}
+\onelinetitle{Validation of Magnetospheric Magnetohydrodynamic Models}
+\author{Brian Curtis}
+\degree{Doctor of Philosophy}
+\doctype{Dissertation}
+\dept{School of Physics, Astronomy, and Computational Sciences}
+\discipline{Computational Science and Informatics}
+
+\seconddeg{Master of Science}
+\seconddegschool{George Mason University}
+\seconddegyear{2010}
+
+\firstdeg{Bachelor of Science}
+\firstdegschool{State University of New York at Oswego}
+\firstdegyear{2007}
+
+\degreeyear{2014}
+
+% Note: semester name should be written in its full-form. For example, Fall Semester, not just Fall.
+\degreesemester{Spring Semester}
+
+\advisor{Dr. Robert Weigel}
+
+\firstmember{Dr. Jie Zhang}
+
+\secondmember{Dr. Arthur Poland}
+
+\thirdmember{Dr. Ruixin Yang}
+
+\depthead{Dr. Chi Yang}
+
+\assocdean{Dr. Donna M. Fox}
+
+\deanITE{Dr. Peggy Agouris}
+
+%%
+%% Introductory pages
+%%
+
+% Note: The signature sheet is set according to the requirements of the Volgenau School of
+% Information Technology and Engineering. If your college/school requirement is different,
+% please make appropriate changes in the "signaturepage" section of gmudissertation.sty file.
+\signaturepage
+
+\titlepage
+
+% copyright technically optional but should be included in to avoid potential pagination problems
+\copyrightpage
+
+%%
+%% Dedication page
+%%
+
+\dedicationpage
+
+\noindent I dedicate this dissertation to my friends and family who have helped
+push me along this journey and made it worthwhile. Specifically my wife,
+Tamarah, who has dealt with my hectic work life and loved and supported me so
+much, making sure that home was truly a comforting and restoring place for my
+mind and body. Also, my parents Robert and Deborah Curtis and brother Jeff
+Curtis, who have supported me throughout all my years in education and shown me
+the importance every little detail makes in the big picture. Finally, my
+expected daughter, Aurora, who gives me inspiration to become as great of a
+human being as I can, to guarantee she has the best role model anyone could ask
+for.
+
+%%
+%% Acknowledgements
+%%
+
+\acknowledgementspage
+
+\noindent I would like to thank my dissertation committee: Dr. Robert Weigel,
+Dr. Art Poland, Dr. Jie Zhang, and Dr. Ruixin Yang for agreeing to give me their
+time and effort. Special thanks to Dr. Robert Weigel who has made this whole
+graduate experience possible, whose guidance and insight has prepared
+me well for scientific pursuit and what to expect after graduation.
+
+%%
+%% Table of contents, list of tables, and lists of figures
+%%
+
+\tableofcontents
+
+\listoftables
+
+\listoffigures
+
+% % % Abstract %
+\abstractpage
+
+Magnetospheric magnetohydrodynamic (MHD) models are commonly used for both
+prediction and modeling of Earth's magnetosphere.  To date, very little
+validation has been performed to determine their limits, uncertainties, and
+differences.  In this work,
+we performed a comprehensive analysis using several commonly used validation
+techniques in the atmospheric sciences to MHD-based models of Earth's
+magnetosphere for the first time. The validation techniques of \texit{parameter
+variability/sensitivity} analysis and \texit{comparison to other models} were used on the OpenGGCM, BATS-R-US, and SWMF
+magnetospheric MHD models to answer several questions about how these
+models compare.  The questions include: (1) the difference between the model's
+predictions prior to and following to a reversal of $B_z$ in the upstream
+interplanetary field (IMF) from positive to negative, (2) the influence of the
+preconditioning duration, and (3) the differences between models under extreme
+solar wind conditions. A differencing visualization tool was developed and used to
+address these three questions.
+
+\abstractmultiplepage We find: (1) For a reversal in $B_z^{IMF}$ from positive
+to negative, the OpenGGCM magnetopause is closest to Earth as it has the weakest
+magnetic pressure near-Earth. The differences in magnetopause positions between
+BATS-R-US and SWMF are explained by the influence of the ring current, which is
+included in SWMF. Densities are highest for SWMF and lowest for OpenGGCM. The
+OpenGGCM tail currents differ significantly from BATS-R-US and SWMF; (2) A
+longer preconditioning time allowed the magnetosphere to relax more, giving
+different positions for the magnetopause with all three models before the
+$B_z^{IMF}$ reversal. There were differences greater than 100\% for all three
+models before the $B_z^{IMF}$ reversal. The differences in the current sheet
+region for the OpenGGCM were small after the $B_z^{IMF}$ reversal. The BATS-R-US
+and SWMF differences decreased after the $B_z^{IMF}$ reversal to near zero; (3)
+For extreme conditions in the solar wind, the OpenGGCM has a large region of
+Earthward flow velocity ($U_x$) in the current sheet region that grows as time
+progresses in a compressed environment. BATS-R-US $B_z$, $\rho$ and $U_x$ stabilize to a near constant value approximately one hour into the run under high compression conditions. Under
+high compression, the SWMF parameters begin to oscillate approximately 100 minutes into
+the run. All three models have similar magnetopause positions under low pressure
+conditions. The OpenGGCM current sheet velocities along the Sun-Earth line are
+largest under low pressure conditions.
+
+The results of this analysis indicate the need for accounting for model
+uncertainties and differences when comparing model predictions with data, provide error bars on
+model prediction in various magnetospheric regions, and show that the
+magnetotail is sensitive to the preconditioning time.
+
+%% Be sure to leave a line of whitespace immediately before this line!!!!!
+%% (If this comment segment runs together with the preceeding text, you might
+%%  see the second page of the abstract numbered "0".)
+%%
+%% If the abstract is more than one page, then place this line PRECISELY
+%% at the page break; otherwise, comment it out.  (See note about this line
+%% in the usage notes.)
+%%
+
+
+%%
+%%  the main body of the dissertation
+%%
+\startofchapters
+
+%% include the chapters one by one (or paste the chapter text in directly if desired)
+\include{Introduction}
+\include{BzFlip}
+\include{Preconditioning}
+\include{ExtremeConditions}
+%%\include{Research}
+%%\include{Results}
+%%\include{Conclusion}
+
+%% Note: appendix is now put before bibliography.
+%% include the following directives if there are any appendices
+\appendix
+\appendixeqnumbering
+\include{Appendix}
+
+%%
+%%  bibliography
+%%
+
+%% list all of the BibTeX files here for the WinEdt project (if applicable)
+%GATHER{bibfile.bib}
+
+%% any bibliography style can be used, but IEEEtran.bst is ideally suited to
+%% electrical engineering references
+
+\bibliographystyle{agufull}
+%%\bibliographystyle{IEEEtran}
+%%\bibliography{IEEEfull,bibfile}
+\bibliography{bibfile}
+
+%%
+%% curriculum vitae
+%%
+\cvpage
+
+\noindent Brian Curtis was born in 1985 in Rochester, New York. He
+graduated from the State University of New York at Oswego with a Bachelor's
+degree in Meteorology in 2007. He also received a master's degree in
+Computational Sciences from George Mason University in Fairfax, Virginia in
+2010. He was employed for 7 years as a research assistant under the instruction
+of Dr. Robert Weigel. His research involves the validation of
+magnetospheric magnetohydrodynamic space weather models. During his time at
+George Mason University, he worked on scientific outreach through an annual space
+weather forecasting contest, was a summer research assistant at the space
+weather prediction center in Boulder, Colorado in 2009, and in the summer of 2013
+was a science collaborator at the National Aeronautics and Space Administration Goddard Space
+Flight Center in Greenbelt, Maryland.
+
+In addition Brian has attended the:\\
+- Geospace Environment Modeling summer conference in Snowmass, CO in 2009.\\
+- Center for Integrated Space weather Modeling summer school in 2008.\\
+- American Meteorological Society annual conference from 2004 to 2007.
+\end{document}

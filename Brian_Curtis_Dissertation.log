@@ -1,0 +1,777 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.5.15)  30 SEP 2013 09:15
+entering extended mode
+ %&-line parsing enabled.
+**Brian_Curtis_Dissertation.tex
+(./Brian_Curtis_Dissertation.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./gmudissertation.sty
+\c@lem=\count88
+\c@prop=\count89
+\c@assum=\count90
+\c@Def=\count91
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen105
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks16
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks25
+) (./ulem.sty
+\UL@box=\box28
+\UL@hyphenbox=\box29
+\UL@skip=\skip49
+\UL@hook=\toks26
+\UL@height=\dimen114
+\UL@pe=\count104
+\UL@pixel=\dimen115
+\ULC@box=\box30
+Package: ulem 2012/05/18
+\ULdepth=\dimen116
+) (./cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+) (./setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+No file Brian_Curtis_Dissertation.aux.
+\openout1 = `Brian_Curtis_Dissertation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+
+Overfull \hbox (1.5023pt too wide) in paragraph at lines 97--97
+[]  \OT1/cmr/m/n/10.95 Dr. Michael Sum-mers, Di-rec-tor, School of Physics,
+ []
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+
+ []
+
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 102.
+
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
+ [2] [3] [4]
+No file Brian_Curtis_Dissertation.toc.
+\tf@toc=\write3
+\openout3 = `Brian_Curtis_Dissertation.toc'.
+
+[5
+
+]
+\hspace {2.225 in} \relax \fontsize {12}{14}\selectfont CHAPTER 1.
+No file Brian_Curtis_Dissertation.lot.
+\tf@lot=\write4
+\openout4 = `Brian_Curtis_Dissertation.lot'.
+
+[6
+
+]
+\hspace {2.225 in} \relax \fontsize {12}{14}\selectfont CHAPTER 2.
+No file Brian_Curtis_Dissertation.lof.
+\tf@lof=\write5
+\openout5 = `Brian_Curtis_Dissertation.lof'.
+
+[7
+
+]
+\hspace {2.225 in} \relax \fontsize {12}{14}\selectfont CHAPTER 3.
+[8
+
+] [0]
+\openout2 = `Introduction.aux'.
+
+ (./Introduction.tex
+\hspace {2.225 in} \relax \fontsize {12}{14}\selectfont CHAPTER 1.
+
+LaTeX Warning: Citation `Thomson2000' on page 1 undefined on input line 8.
+
+
+! LaTeX Error: Cannot determine size of graphic in images/NASA_BigPicture.jpg (
+no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...ics[scale=0.5]{images/NASA_BigPicture.jpg}
+                                                  
+? 
+File: images/NASA_BigPicture.jpg Graphic file (type eps)
+<images/NASA_BigPicture.jpg>
+
+LaTeX Warning: Reference `fig:NASABP' on page 1 undefined on input line 27.
+
+
+LaTeX Warning: Reference `fig:NASABP' on page 1 undefined on input line 29.
+
+
+LaTeX Warning: Citation `Mewaldt1995' on page 1 undefined on input line 30.
+
+
+LaTeX Warning: Reference `fig:NASABP' on page 1 undefined on input line 31.
+
+
+LaTeX Warning: Reference `fig:NASABP' on page 1 undefined on input line 34.
+
+[1
+
+
+]
+
+LaTeX Warning: Citation `Kulsrud' on page 2 undefined on input line 52.
+
+
+LaTeX Warning: Citation `Kallenrode' on page 2 undefined on input line 65.
+
+
+! LaTeX Error: Cannot determine size of graphic in images/parker.jpg (no Boundi
+ngBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...ludegraphics[scale=0.3]{images/parker.jpg}
+                                                  
+? 
+File: images/parker.jpg Graphic file (type eps)
+<images/parker.jpg>
+
+LaTeX Warning: Reference `fig:NASAParkerSpiral' on page 2 undefined on input li
+ne 83.
+
+
+LaTeX Warning: Citation `Parker1958' on page 2 undefined on input line 84.
+
+[2]
+
+! LaTeX Error: Cannot determine size of graphic in images/CIR.jpeg (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 	\includegraphics[scale=0.6]{images/CIR.jpeg}
+                                                  
+? 
+File: images/CIR.jpeg Graphic file (type eps)
+<images/CIR.jpeg>
+
+LaTeX Warning: Citation `Volk2004' on page 3 undefined on input line 90.
+
+
+LaTeX Warning: Reference `fig:VolkCIR' on page 3 undefined on input line 96.
+
+
+! LaTeX Error: Cannot determine size of graphic in images/NASA_Sunspot.jpg (no 
+BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 ...phics[scale=0.1]{images/NASA_Sunspot.jpg}
+                                                  \\
+? 
+File: images/NASA_Sunspot.jpg Graphic file (type eps)
+<images/NASA_Sunspot.jpg>
+
+LaTeX Warning: Citation `Kallenrode' on page 3 undefined on input line 112.
+
+
+LaTeX Warning: Reference `fig:NASAsunspot' on page 3 undefined on input line 11
+2.
+
+[3]
+
+! LaTeX Error: Cannot determine size of graphic in images/NASA_CME.jpg (no Boun
+dingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 ...egraphics[scale=0.3]{images/NASA_CME.jpg}
+                                                  \\
+? 
+File: images/NASA_CME.jpg Graphic file (type eps)
+<images/NASA_CME.jpg>
+
+LaTeX Warning: Reference `fig:NASACME' on page 4 undefined on input line 133.
+
+
+LaTeX Warning: Citation `Priest' on page 4 undefined on input line 137.
+
+
+! LaTeX Error: Cannot determine size of graphic in images/NASA_Heliosphere.jpg 
+(no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...s[scale=0.3]{images/NASA_Heliosphere.jpg}
+                                                  
+? 
+File: images/NASA_Heliosphere.jpg Graphic file (type eps)
+<images/NASA_Heliosphere.jpg>
+
+LaTeX Warning: Reference `fig:NASAHelio' on page 4 undefined on input line 149.
+
+
+
+LaTeX Warning: Citation `Krimigis2009' on page 4 undefined on input line 159.
+
+[4]
+
+! LaTeX Error: Cannot determine size of graphic in images/AtmosphereWithIonosph
+ere.jpg (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 ...0.4]{images/AtmosphereWithIonosphere.jpg}
+                                                  
+? 
+File: images/AtmosphereWithIonosphere.jpg Graphic file (type eps)
+<images/AtmosphereWithIonosphere.jpg>
+
+LaTeX Warning: Reference `fig:IonoThermo' on page 5 undefined on input line 173
+.
+
+
+LaTeX Warning: Citation `Kelley' on page 5 undefined on input line 183.
+
+
+LaTeX Warning: Citation `Pirjola2005' on page 5 undefined on input line 205.
+
+[5]
+
+LaTeX Warning: Citation `Chapman1930' on page 6 undefined on input line 223.
+
+
+LaTeX Warning: Citation `Kennel' on page 6 undefined on input line 235.
+
+[6]
+
+! LaTeX Error: Cannot determine size of graphic in images/Rice_Magnetosphere.jp
+g (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.240 ...scale=0.3]{images/Rice_Magnetosphere.jpg}
+                                                  
+? 
+File: images/Rice_Magnetosphere.jpg Graphic file (type eps)
+<images/Rice_Magnetosphere.jpg>
+LaTeX Font Info:    Try loading font information for U+msa on input line 249.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 249.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+
+LaTeX Warning: Reference `fig:Rice_Magneto' on page 7 undefined on input line 2
+58.
+
+[7]
+
+LaTeX Warning: Citation `Priest' on page 8 undefined on input line 285.
+
+
+LaTeX Warning: Reference `fig:Rice_Magneto' on page 8 undefined on input line 2
+91.
+
+
+LaTeX Warning: Reference `fig:Rice_Magneto' on page 8 undefined on input line 2
+95.
+
+
+LaTeX Warning: Citation `Priest' on page 8 undefined on input line 308.
+
+[8]
+
+LaTeX Warning: Citation `Kennel' on page 9 undefined on input line 331.
+
+[9]
+
+! LaTeX Error: Cannot determine size of graphic in images/NASA_aurora.jpg (no B
+oundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.336 ...phics[scale=0.15]{images/NASA_aurora.jpg}
+                                                  
+? 
+File: images/NASA_aurora.jpg Graphic file (type eps)
+<images/NASA_aurora.jpg>
+
+LaTeX Warning: Reference `fig:NASA_aurora' on page 10 undefined on input line 3
+41.
+
+
+LaTeX Warning: Citation `Kennel' on page 10 undefined on input line 348.
+
+
+LaTeX Warning: Citation `Kominsky' on page 10 undefined on input line 354.
+
+
+LaTeX Warning: Citation `Goldston' on page 10 undefined on input line 357.
+
+[10]
+
+LaTeX Warning: Reference `Boltzmann' on page 11 undefined on input line 374.
+
+
+LaTeX Warning: Reference `Boltzmann+1' on page 11 undefined on input line 383.
+
+
+LaTeX Warning: Reference `gentrans-1' on page 11 undefined on input line 393.
+
+[11]
+
+LaTeX Warning: Citation `Kominsky' on page 12 undefined on input line 401.
+
+
+LaTeX Warning: Citation `ConOfMass' on page 12 undefined on input line 405.
+
+
+LaTeX Warning: Reference `gentrans' on page 12 undefined on input line 406.
+
+
+LaTeX Warning: Reference `gentrans' on page 12 undefined on input line 415.
+
+
+LaTeX Warning: Reference `ConOfMass-1' on page 12 undefined on input line 423.
+
+[12]
+
+LaTeX Warning: Citation `Kominsky' on page 13 undefined on input line 429.
+
+
+LaTeX Warning: Citation `ConOfMomen' on page 13 undefined on input line 433.
+
+
+LaTeX Warning: Reference `Boltzmann' on page 13 undefined on input line 433.
+
+
+LaTeX Warning: Citation `Kominsky' on page 13 undefined on input line 444.
+
+
+LaTeX Warning: Citation `ConOfEner' on page 13 undefined on input line 454.
+
+
+LaTeX Warning: Reference `Boltzmann' on page 13 undefined on input line 454.
+
+
+LaTeX Warning: Reference `Boltzmann' on page 13 undefined on input line 459.
+
+[13] [14]
+
+LaTeX Warning: Reference `ConOfMass' on page 15 undefined on input line 488.
+
+
+LaTeX Warning: Reference `ConOfMomen' on page 15 undefined on input line 494.
+
+
+LaTeX Warning: Reference `ConOfEner' on page 15 undefined on input line 513.
+
+[15] [16] [17]
+
+LaTeX Warning: Citation `Kominsky' on page 18 undefined on input line 580.
+
+[18] [19]
+
+LaTeX Warning: Citation `CCMCModels' on page 20 undefined on input line 620.
+
+
+LaTeX Warning: Citation `Raeder2003' on page 20 undefined on input line 627.
+
+
+LaTeX Warning: Reference `sec:mhd' on page 20 undefined on input line 631.
+
+[20] [21] [22]
+
+LaTeX Warning: Citation `Raeder2003' on page 23 undefined on input line 720.
+
+[23] [24]
+Overfull \hbox (4.50105pt too wide) in paragraph at lines 765--781
+\OT1/cmr/m/n/10.95 The Lyon-Fedder-Mobarry (LFM) model uses a high-order to-tal
+ vari-a-tion di-min-ish-ing scheme
+ []
+
+
+LaTeX Warning: Citation `Vasquez' on page 25 undefined on input line 789.
+
+
+LaTeX Warning: Citation `Fiebrich2009' on page 25 undefined on input line 793.
+
+
+LaTeX Warning: Citation `Page' on page 25 undefined on input line 794.
+
+
+LaTeX Warning: Citation `Ahrens' on page 25 undefined on input line 797.
+
+[25]
+
+LaTeX Warning: Citation `Kallenrode' on page 26 undefined on input line 809.
+
+
+LaTeX Warning: Citation `ASOSNum' on page 26 undefined on input line 812.
+
+
+LaTeX Warning: Citation `Ahrens' on page 26 undefined on input line 822.
+
+[26]
+! Misplaced alignment tab character &.
+l.827 V&
+        V analyses help model developers and users gain greater confidence o...
+
+? 
+
+LaTeX Warning: Citation `Sargent2004' on page 27 undefined on input line 835.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+! Misplaced alignment tab character &.
+l.848 ...tions contain examples of the types of V&
+                                                  V currently
+? 
+! Misplaced alignment tab character &.
+<argument> Terrestrial V&
+                         V
+l.854 \subsection{Terrestrial V&V}
+                                  
+? 
+! Misplaced alignment tab character &.
+l.857 ...(SWPC). Terrestrial weather methods of V&
+                                                  V have been improved
+? 
+! Misplaced alignment tab character &.
+l.858 over that time and their V&
+                                 V methods should be considered for space we...
+
+? 
+[27]
+! Misplaced alignment tab character &.
+l.861 One V&
+            V method called parameter variability or sensitivity analysis is a
+? 
+
+LaTeX Warning: Citation `Sargent2004' on page 28 undefined on input line 864.
+
+! Undefined control sequence.
+l.867 \Cite
+           {Viger2011} performs a study on the hydrological effects of urban...
+
+? 
+
+LaTeX Warning: Citation `Sokolov2009' on page 28 undefined on input line 877.
+
+
+LaTeX Warning: Citation `Andrejczuk2006' on page 28 undefined on input line 886
+.
+
+
+LaTeX Warning: Citation `Katzav2011' on page 28 undefined on input line 892.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+[28]
+! Misplaced alignment tab character &.
+<argument> Space Weather V&
+                           V
+l.906 \subsection{Space Weather V&V}
+                                    
+? 
+! Misplaced alignment tab character &.
+l.909 increasing amount of attention to V&
+                                          V in the space weather modeling co...
+
+? 
+! Misplaced alignment tab character &.
+l.911 that use parameter variability V&
+                                       V is limited. The following space wea...
+
+? 
+! Misplaced alignment tab character &.
+l.912 articles do not use parameter variability V&
+                                                  V but rather analyze predi...
+
+? 
+! Misplaced alignment tab character &.
+l.912 ...lity V&V but rather analyze predictive V&
+                                                  V
+? 
+
+LaTeX Warning: Citation `Taktakishvili2009' on page 29 undefined on input line 
+915.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+LaTeX Warning: Citation `Xie2004' on page 29 undefined on input line 916.
+
+
+LaTeX Warning: Citation `Odstrcil2003' on page 29 undefined on input line 917.
+
+
+LaTeX Warning: Citation `Pulkkinen2011' on page 29 undefined on input line 922.
+
+
+
+LaTeX Warning: Citation `MacNeice2009a' on page 29 undefined on input line 928.
+
+
+
+LaTeX Warning: Citation `Arge2003' on page 29 undefined on input line 929.
+
+
+LaTeX Warning: Citation `MacNeice2009b' on page 29 undefined on input line 930.
+
+
+[29]
+
+LaTeX Warning: Citation `Garcia2007' on page 30 undefined on input line 935.
+
+
+LaTeX Warning: Citation `Lyon2004' on page 30 undefined on input line 936.
+
+
+LaTeX Warning: Citation `Mozer2003' on page 30 undefined on input line 941.
+
+
+LaTeX Warning: Citation `Hakamada1982' on page 30 undefined on input line 942.
+
+
+LaTeX Warning: Citation `Stone1998' on page 30 undefined on input line 945.
+
+
+LaTeX Warning: Citation `Owens2005' on page 30 undefined on input line 948.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+) [30]
+\openout2 = `Research.aux'.
+
+ (./Research.tex
+\hspace {2.225 in} \relax \fontsize {12}{14}\selectfont CHAPTER 2.
+) [31
+
+
+
+]
+\openout2 = `Results.aux'.
+
+ (./Results.tex
+\hspace {2.225 in} \relax \fontsize {12}{14}\selectfont CHAPTER 3.
+) [32
+
+
+
+]
+\openout2 = `Conclusion.aux'.
+
+ (./Conclusion.tex
+\hspace {2.225 in} \relax \fontsize {12}{14}\selectfont CHAPTER 4.
+) [33
+
+
+
+]
+\openout2 = `Appendix.aux'.
+
+ (./Appendix.tex
+Appendix A.
+) [34
+
+
+]
+No file Brian_Curtis_Dissertation.bbl.
+
+======================== Attention ===============================
+
+The signature lines are different for each College/School of
+George Mason University.
+
+The current signature page is set according to the requirements
+of the Volgenau School of Information Technology and Engineering.
+Students of other colleges/schools may need to manipulate the
+"signaturepage" section of the gmudissertation.sty file in order
+for the signature page to be formatted correctly.
+
+==================================================================
+
+[35
+
+] (./Brian_Curtis_Dissertation.aux (./Introduction.aux) (./Research.aux)
+(./Results.aux) (./Conclusion.aux) (./Appendix.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2006 strings out of 495062
+ 22975 string characters out of 1182644
+ 76001 words of memory out of 3000000
+ 5145 multiletter control sequences out of 15000+50000
+ 10879 words of font info for 41 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 27i,6n,23p,2886b,266s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Brian_Curtis_Dissertation.dvi (45 pages, 80168 bytes).

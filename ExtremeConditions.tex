@@ -1,0 +1,536 @@
+\section[Extreme Conditions]{Extreme conditions in the magnetosphere}
+
+\subsection{Background and Motivation}
+In order to improve predictability of the magnetopause location under extreme
+events, \citet{Shue1998} took magnetopause crossing satellite measurements and
+compared them to two models. The first model (\textit{Petrinic and Russell},
+1996) was compared to the \textit{Shue et. al.} (1997) model. Both models
+compared well with the magnetopause crossings at the day-side magnetopause,
+while the \textit{Shue et. al.} (1997) model had a poorer fit for magnetopause
+crossings at the flanks.
+The explanation for the discrepancies was that they were ``due to the inappropriate linear extrapolation from the parameter range for average solar wind conditions to that
+for extreme conditions''. Upon correction, the \textit{Shue et. al.}
+(1997) model was able to better predict magnetopause flank crossings.
+
+Companies and government agencies with space-based assests are interested in the
+duration of extreme storms. \citet{Cid2013} studied the effectiveness of a
+hyperbolic function for estimating the decay time after minimum $D_{st}$ values
+for extreme storms.
+A hyperbolic function was used because previously used linear functions did not
+accurately predict the the decay time of extreme storms. The extremity of the
+storm was determined by the $D_{st}$ index where data was available, and a
+``Local Disturbance Index'' taken from the $H$ component of geomagnetic field
+measured at each observatory where $D_{st}$ data was not available.
+
+Extreme space weather events are an active area of research.  For
+example, statistical analysis on the long range correlations was by
+\citet{Sharma2011} used a database of over 5 million events. The basis
+for the research was that dynamical and statistical features in
+extreme events are complicated due to the turbulent nature of the
+solar wind.  An auto-correlation function and a detrended fluctuation
+analysis were performed to find the long-range correlations.  In this
+work, the extreme events were compiled from a
+database. Although the used data was not model--based and the approach involved examining statistical properties, it did not involve a comparison to other models.
+By comparing multiple models given the same generic input, as done in this experiment, along
+with the extremes of input variables, forecasters may gain a better
+understanding of which model is best to use for a variety of extreme
+space weather conditions.
+
+%\subsection{Motivation}
+%Two of the validation techniques described by \citet{Sargent2004},
+%\textit{comparison to other models}, and \textit{parameter variability} were us%ed in this section to better understand model behavior under extreme conditions.
+%\citet{Cid2013} compared both a hyperbolic and linear fit to recovery times of
+%strong geomagnetic storms to determine which provided the best comparison. The
+%study determined that the hyperbolic fit was the best match for strong storms,
+%and as the storm intensity decreased a linear approach became the better choice%.
+%This study uses a \textit{historical data} validation.
+
+\subsection{Methodology}
+The similarities of the methodologies in all three experiments are described in
+the methodology section for the $B_z^{IMF}$ reversal experiment in section
+\ref{SimilarMethodology} of this dissertation. 
+
+\begin{table}
+\begin{center}
+  \caption{Input parameters for extreme conditions experiment}
+  \begin{tabular}{| l | c | c | c | c | }
+    \hline
+    \textbf{Run Num.} & \textbf{$\rho$} & \textbf{$T$} & \textbf{$Vx$} &
+    \textbf{$B_z$}
+    \\
+    \hline 
+    3 & 11 & 101289 & -604  & -3.0 \\ \hline
+    4 & 2 & 101289 & -320  & 3.1 \\ \hline
+  \end{tabular}
+  \label{table:runs34}
+\end{center}
+\end{table}
+As shown in Table \ref{table:runs34}, in order to compress the magnetosphere,
+input variables were chosen corresponding to a high solar wind velocity, a negative
+solar wind magnetic field, and a high solar wind density. Under high
+compression, magnetospheric features may be difficult to resolve due to limitations in resolution.  For the low compression run, input variables were chosen that lead to a small
+compression of the magnetosphere: a low solar wind velocity, a positive $B_z$,
+and a low density.
+
+\subsection{Results}
+\subsubsection{High Magnetospheric Compression}
+% B%
+As shown in Figure \ref{fig:BHighCompressionBeginning}, all three models have
+similar $B_z$ contours. The OpenGGCM model magnetopause is closest to Earth.
+In Figure \ref{fig:BDiffHighBeginning}, the BATS-R-US model magnetopause is
+shown to be farther Sunward than that for the SWMF model. Figure
+\ref{fig:BDiffHighBeginning} also shows higher $B_z$ values
+to occur in the tail region for the BATS-R-US and SWMF models.
+
+\begin{figure}
+	\centering
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_1/Results/images/Bz_File9.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_2/Results/images/Bz_File9.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_3/Results/images/Bz_File9.png}
+		}
+	\caption{$B_z$ for OpenGGCM (top), BATS-R-US (middle), and SWMF (bottom).}
+	\figSpace
+	\label{fig:BHighCompressionBeginning}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/8_9/images/Bz_Diff_File9.png}
+	}
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/8_10/images/Bz_Diff_File9.png}
+    }
+    \subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/9_10/images/Bz_Diff_File9.png}
+	}
+    \caption{$B_z$ percent differences between OpenGGCM and BATS-R-US (top),
+    OpenGGCM and SWMF (middle), and BATS-R-US and SWMF (bottom).
+    }
+    \label{fig:BDiffHighBeginning}
+	\figSpace
+\end{figure}
+
+The shape of the BATS-R-US and SWMF magnetosphere at the end of the model runs have
+not significantly changed from the beginning, as shown in Figure
+\ref{fig:BHighCompressionEnd}. The OpenGGCM model has higher $B_z$ values in the
+near-Earth current sheet region. The values of $B_z$, $\rho$ and $U_x$ stabilize to a near constant value approximately one hour into the BATS-R-US run. The BATS-R-US and SWMF models, 
+compared in Figure \ref{fig:BDiffHighEnd}, show large regions of higher $B_z$ from the BATS-R-US
+model that are next to regions with higher $B_z$ from the SWMF model. The SWMF model,
+viewed from $U_x$ plots, shows the largest oscillations.
+\begin{figure}
+	\centering
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_1/Results/images/Bz_File72.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_2/Results/images/Bz_File72.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_3/Results/images/Bz_File72.png}
+		}
+	\caption{$B_z$ for OpenGGCM (top), BATS-R-US (middle), and SWMF (bottom).}
+	\figSpace
+	\label{fig:BHighCompressionEnd}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/8_9/images/Bz_Diff_File72.png}
+		}
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/8_10/images/Bz_Diff_File72.png}
+		}
+    \subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/9_10/images/Bz_Diff_File72.png}
+		}
+    \caption{$B_z$ percent differences between OpenGGCM and BATS-R-US (top),
+    OpenGGCM and SWMF (middle), and BATS-R-US and SWMF (bottom).
+    }
+    \label{fig:BDiffHighEnd}
+	\figSpace
+\end{figure}
+
+
+% RHO%
+With a dense and fast solar wind, a large region of high density at the
+magnetopause is expected, consistent with Figure
+\ref{fig:rhoHighCompressionBeginning}. Also, as described in the first
+experiment, the OpenGGCM model does not include a model of the inner magnetosphere while
+the SWMF model does, and the observations are consistent with this.
+In Figure \ref{fig:rhoHighCompressionBeginning}, the top two plots show the BATS-R-US and
+SWMF models to have higher densities in the current sheet region compared to the
+OpenGGCM, while the bottom plot shows that the densities in the current sheet are similar
+between the BATS-R-US and SWMF models. 
+The scalar $\rho$ plots do not show many differences from the beginning to the end of the run.
+
+% Reads as if a plot be effected by a response.  Not sure what you are trying to say.   
+
+%The difference plots towards the end of
+%the run are effected by the three different responses by the three models for
+%high compression. 
+\begin{figure}
+	\centering
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_1/Results/images/rho_File1.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_2/Results/images/rho_File1.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_3/Results/images/rho_File1.png}
+		}
+	\caption{$\rho$ for OpenGGCM (top), BATS-R-US (middle), and SWMF (bottom).}
+	\figSpace
+	\label{fig:rhoHighCompressionBeginning}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/8_9/images/rho_Diff_File1.png}
+		}
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/8_10/images/rho_Diff_File1.png}
+		}
+    \subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/9_10/images/rho_Diff_File1.png}
+		}
+    \caption{$\rho$ percent differences between OpenGGCM and BATS-R-US (top),
+    OpenGGCM and SWMF (middle), and BATS-R-US and SWMF (bottom).
+    }
+    \label{fig:rhoDiffHighBeginning}
+	\figSpace
+\end{figure}
+
+
+%U_X%
+As shown in Figure \ref{fig:UxHighCompressionBeginning},
+all three models begin with high tailward $U_x$ in the current sheet
+region. The maximum $U_x$ observed in each model is different. The OpenGGCM
+model (top) maximum $U_x$ is 1,410~$km/s$, the BATS-R-US model (middle) maximum $U_x$ is
+1,560~$km/s$, while the SWMF model (bottom) maximum $U_x$ is 841~$km/s$. The SWMF
+model maximum $U_x$ is just over half of the other two models.
+\begin{figure}
+	\centering
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_1/Results/images/Ux_File1.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_2/Results/images/Ux_File1.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_3/Results/images/Ux_File1.png}
+		}
+	\caption{$U_x$ for OpenGGCM (top), BATS-R-US (middle), and SWMF (bottom).}
+	\figSpace
+	\label{fig:UxHighCompressionBeginning}
+\end{figure}
+At the end of the runs, as shown in Figure \ref{fig:UxHighCompressionEnd}, the
+same movements occur in the BATS-R-US model (middle) and SWMF (bottom), and the same
+region that was observed in the OpenGGCM model (top) is observed in $U_x$ plots as a
+large region of Earthward velocity.
+\begin{figure}
+	\centering
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_1/Results/images/Ux_File72.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_2/Results/images/Ux_File72.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_3/Results/images/Ux_File72.png}
+		}
+	\caption{$U_x$ for OpenGGCM (top), BATS-R-US (middle), and SWMF (bottom).}
+	\figSpace
+	\label{fig:UxHighCompressionEnd}
+\end{figure}
+
+As shown in Figure \ref{fig:UxDiffHighBeginning}, the largest differences are in
+the current sheet region for all three comparisons. Between the OpenGGCM and
+BATS-R-US models (top) the BATS-R-US model has largest differences in $U_x$,
+with the OpenGGCM model having larger differences in the tail lobes. Between the OpenGGCM and
+SWMF models (middle), the SWMF model has larger differences. Between the
+BATS-R-US and SWMF models (bottom) the BATS-R-US model has the largest differences in $U_x$ in the
+current sheet region with the SWMF model having larger differences in the tail
+lobes of the distant tail.
+\begin{figure}
+	\centering
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/8_9/images/Ux_Diff_File1.png}
+		}
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/8_10/images/Ux_Diff_File1.png}
+		}
+    \subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/9_10/images/Ux_Diff_File1.png}
+		}
+    \caption{$U_x$ percent differences between OpenGGCM and BATS-R-US (top),
+    OpenGGCM and SWMF (middle), and BATS-R-US and SWMF (bottom).
+    }
+    \label{fig:UxDiffHighBeginning}
+	\figSpace
+\end{figure}
+As time progresses, all three comparisons have differences similar to that observed
+in the beginning of the run.  The differences between the BATS-R-US and SWMF
+models have increased in the current sheet region giving the BATS-R-US model higher
+values, as shown in Figure \ref{fig:UxDiffHighEnd}.
+\begin{figure}
+	\centering
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/8_9/images/Ux_Diff_File56.png}
+		}
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/8_10/images/Ux_Diff_File56.png}
+		}
+    \subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/9_10/images/Ux_Diff_File56.png}
+		}
+    \caption{$U_x$ percent differences between OpenGGCM and BATS-R-US (top),
+    OpenGGCM and SWMF (middle), and BATS-R-US and SWMF (bottom).
+    }
+    \label{fig:UxDiffHighEnd}
+	\figSpace
+\end{figure}
+
+\subsubsection{Low Magnetospheric Compression}
+This section contains a discussion of the differences between the three models for
+conditions that lead to a low magnetospheric compression.
+%B%
+As shown in Figure \ref{fig:BLowCompressionBeginning}, $B_z$ in
+the OpenGGCM model (top) shows the most stretching in the magnetotail, while the
+BATS-R-US (middle) and SWMF (bottom) appear similar to each other and do not stretch as far.
+\begin{figure}
+	\centering
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_5/Results/images/Bz_File1.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_6/Results/images/Bz_File1.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_7/Results/images/Bz_File1.png}
+		}
+	\caption{$B_z$ for OpenGGCM (top), BATS-R-US (middle), and SWMF (bottom).}
+	\figSpace
+	\label{fig:BLowCompressionBeginning}
+\end{figure}
+As time progresses, the OpenGGCM model shows the most fluctuations,
+while the BATS-R-US and OpenGGCM models have minimal fluctuations. For all three
+models, there is minimal change from the beginning of the run to the end of the
+run.
+
+As shown in Figure \ref{fig:BDiffLowBeginning}, the OpenGGCM and BATS-R-US
+models (top) and the OpenGGCM and SWMF models (middle) differences are similar. The differences between the BATS-R-US and SWMF models are near
+zero for all regions in the magnetosphere. There is only a small region of differences in the magnetopause
+tailward of the cusps. As time progresses in the run, there are minimal changes
+between all three models, although the OpenGGCM and BATS-R-US models have a difference
+reduction in the current sheet region. The same is true for the OpenGGCM and
+SWMF model differences.
+\begin{figure}
+	\centering
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/12_13/images/Bz_Diff_File1.png}
+		}
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/12_14/images/Bz_Diff_File1.png}
+		}
+    \subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/13_14/images/Bz_Diff_File1.png}
+		}
+    \caption{$B_z$ percent differences between OpenGGCM and BATS-R-US (top),
+    OpenGGCM and SWMF (middle), and BATS-R-US and SWMF (bottom).
+    }
+    \label{fig:BDiffLowBeginning}
+	\figSpace
+\end{figure}
+
+%RHO%
+The maximum density for the OpenGGCM, BATS-R-US and SWMF model runs are
+11~$cm^{-3}$, 29~$cm^{-3}$ and 29~$cm^{-3}$ respectively. As shown in Figure
+\ref{fig:rhoLowCompressionBeginning}, the near-Earth $\rho$ is high for the
+BATS-R-US and SWMF models with the OpenGGCM model having low $\rho$. There is
+minimal change between the three models for the length of the run.
+\begin{figure}
+	\centering
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_5/Results/images/rho_File1.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_6/Results/images/rho_File1.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_7/Results/images/rho_File1.png}
+		}
+	\caption{$\rho$ for OpenGGCM (top), BATS-R-US (middle), and SWMF (bottom).}
+	\figSpace
+	\label{fig:rhoLowCompressionBeginning}
+\end{figure}
+
+As shown in Figure \ref{fig:rhoDiffLowBeginning}, the OpenGGCM vs. BATS-R-US
+models (top) and the OpenGGCM vs. SWMF models (middle) show large differences
+near Earth extending tailward in the current sheet region. The only differences between the BATS-R-US
+and SWMF models (bottom) are near Earth where the BATS-R-US model has the larger
+differences with the SWMF model having higher values in the distant tail lobes.
+As time progresses, there are no major changes in the plots.
+\begin{figure}
+	\centering
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/12_13/images/rho_Diff_File1.png}
+		}
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/12_14/images/rho_Diff_File1.png}
+		}
+    \subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/13_14/images/rho_Diff_File1.png}
+		}
+    \caption{$\rho$ percent differences between OpenGGCM and BATS-R-US (top),
+    OpenGGCM and SWMF (middle), and BATS-R-US and SWMF (bottom).
+    }
+    \label{fig:rhoDiffLowBeginning}
+	\figSpace
+\end{figure}
+
+% Ux%
+The maximum $U_x$ for the OpenGGCM, BATS-R-US, and SWMF models are 809~$km/s$,
+347~$km/s$ and 349~$km/s$, respectively. Shown in Figure
+\ref{fig:UxLowCompressionBeginning}, the current sheet $U_x$ is high for the
+OpenGGCM but not for the BATS-R-US and SWMF models. There is minimal change
+between the three models for the length of the time series. The OpenGGCM model
+has fluctuations in the tail region for $U_x$, while the other two models do not.
+\begin{figure}
+	\centering
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_5/Results/images/Ux_File1.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_6/Results/images/Ux_File1.png}
+		}
+	\subfigure{%
+		\includegraphics[scale=0.36]{/mnt/Disk2/Brian_Curtis_042413_7/Results/images/Ux_File1.png}
+		}
+	\caption{$U_x$ for OpenGGCM (top), BATS-R-US (middle), and SWMF (bottom).}
+	\figSpace
+	\label{fig:UxLowCompressionBeginning}
+\end{figure}
+
+As shown in Figure
+\ref{fig:UxDiffLowBeginning}, the OpenGGCM vs. BATS-R-US models (top) have higher
+$U_x$ in the current sheet and near-Earth regions for the OpenGGCM model. The
+OpenGGCM vs. SWMF models (middle) differences in $U_x$ are higher in the current
+sheet and near-Earth regions for the OpenGGCM model. The BATS-R-US vs. SWMF
+model differences show high values for the BATS-R-US model in the near-Earth tail
+lobes of the magnetosphere.
+\begin{figure}
+	\centering
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/12_13/images/Ux_Diff_File1.png}
+		}
+	\subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/12_14/images/Ux_Diff_File1.png}
+		}
+    \subfigure{
+		\includegraphics[scale=0.36]{/mnt/Disk2/Results/13_14/images/Ux_Diff_File1.png}
+		}
+    \caption{$U_x$ percent differences between OpenGGCM and BATS-R-US (top),
+    OpenGGCM and SWMF (middle), and BATS-R-US and SWMF (bottom).
+    }
+    \label{fig:UxDiffLowBeginning}
+	\figSpace
+\end{figure}
+
+\subsection{Discussion and Conclusions}
+\subsubsection{High Compression}
+
+A strong southern component of the solar wind IMF will weaken the magnetic
+field at Earth's magnetopause due to their different orientations. Combined with a
+fast solar wind velocity and high solar wind densities, the magnetosphere will
+compress because the kinetic pressure from the solar wind
+becomes larger than the magnetic pressure of Earth's magnetic field.
+
+The $B_z$ plots show magnetopause locations. The OpenGGCM model
+is closest to Earth due to the weaker magnetic pressure that is a result of the model
+not accounting for a ring current. The BATS-R-US magnetopause, because it does
+not account for the ring current, is expected to be similar to the OpenGGCM. This is not
+observed in the results, and is likely due to differences in how each model
+couples to the inner boundary. The SWMF magnetopause location
+is expected to be farther from Earth than that of the OpenGGCM model.
+
+The three models produce three different predictions of how the
+magnetosphere reacts to solar wind conditions that will cause high compression. The OpenGGCM model has a region of higher $B_z$ in the near-Earth
+current sheet region at the end of the run. There are high Earthward velocities
+in the same region at the end of the run.  The velocities in the tail
+region come from reconnection in the current sheet. The BATS-R-US model appears to stop movement entirely before the midway point
+of the run. The reasoning for this result is currently unknown and requires
+further research.  The SWMF model, as time progresses, appears to oscillate with increasing
+movement not stopping by the end of the run. One hypothesis is that there is a
+destabilization caused by the RCM in which the global magnetosphere starts to
+oscillate. Towards the end of the run there is little increase in the
+oscillations, and along with the OpenGGCM model results, it would be important to
+study the model results with a longer time frame than 6 hours.
+
+\subsubsection{Low Compression}
+Opposite to the conditions for a high compression of the magnetosphere, low
+compression occurs with a slow solar wind $U_x$, a
+positive $B_z$ and a low $\rho$. $B_z^{IMF}$ and Earth's $B_z$ are both the
+same direction, which increases the magnetic field strength at the magnetopause
+causing a strong magnetic pressure that pushes the magnetopause Sunward. The
+effect of the ring current is minimal, which keeps the magnetopause locations
+fairly close to one another for all three models.
+
+The OpenGGCM model current sheet velocities are larger in a low compression
+environment than that in the BATS-R-US and SWMF models, where the differences were very
+close to zero over the entire domain. The speeds of plasma in the current
+sheet can play a large role in the effects of the plasma as observed at Earth.
+The resistive MHD used in the OpenGGCM model may allow for faster reconnection in the current sheet region and explain the faster
+velocities observed in the current sheet region.
+
+\subsubsection{Summary}
+For extreme conditions in the solar wind, the
+following occurs in the considered MHD models of the magnetosphere:
+\begin{itemize}
+  \item The OpenGGCM model has a large region of Earthward $U_x$ in the current
+  sheet region that grows as time progresses in a compressed environment.
+  \item The BATS-R-US model is either completely stable or stops in a compressed
+  environment.
+  \item In a compressed environment, the SWMF model will eventually oscillate.
+  \item The OpenGGCM model has the highest tailward velocities under strong compression conditions.
+  \item The RCM inner magnetosphere model may explain the smaller maximum velocities observed in the SWMF model.
+  \item The OpenGGCM model has the highest $B_z$ under strong compression.
+  \item All three models have similar magnetopause positions under low compression.
+  \item The OpenGGCM model current sheet velocities are largest under low compression.
+\end{itemize}
+
+\chapter{Summary and Conclusions}
+
+The objective of this work was to perform three experiments in order to further
+our understanding of the behavior of and differences between magnetospheric MHD
+models. Three experiments were performed.  The first experiment was used to
+determine the differences between model predictions when $B_z^{IMF}$ changed
+from positive to negative while all other inputs were constant.  The second
+experiment determined the sensitivity of the models to the length of time that
+they were preconditioned prior to a change in $B_z^{IMF}$ from positive to
+negative.  The third experiment used extreme solar wind conditions,
+corresponding to weak and strong magnetospheric compression.
+
+The type of analysis performed for this thesis is expected to be
+useful to model developers. A next step for this research will be to
+expand the experiments to include more magnetospheric models. We found
+that the model output depended on preconditioning time; therefore a
+next step is to determine the shortest preconditioning time for which
+the output is nearly the same.  Another analysis will be to
+expand the number of artificial input conditions used for the comparisons made in the first experiment. 
+
+Finally, an important goal for model developers is to allow forecasters to have
+and understanding of the uncertainties and differences between the predictions of their models. To
+accomplish this, the tendencies determined from this thesis should be
+used when interpreting forecasts.
+We conclude that more validation of the type performed for this thesis is
+needed because of the significant differences found between models (and within a given model for different preconditioning times) and the fact that output of these models are regularly used for interpretation of observations.
+
