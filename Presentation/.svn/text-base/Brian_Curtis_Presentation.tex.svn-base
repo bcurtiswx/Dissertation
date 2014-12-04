@@ -1,0 +1,79 @@
+%% LaTeX Beamer presentation template (requires beamer package)
+%% see http://bitbucket.org/rivanvx/beamer/wiki/Home
+%% idea contributed by H. Turgut Uyar
+%% template based on a template by Till Tantau
+%% this template is still evolving - it might differ in future releases!
+
+%%	  \begin{itemize}
+%%	    \item
+%%	  \end{itemize}
+
+\documentclass{beamer}
+\setcounter{tocdepth}{2}
+\mode<presentation>
+{
+\usetheme{Warsaw}
+
+\setbeamercovered{transparent}
+}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+
+% font definitions, try \usepackage{ae} instead of the following
+% three lines if you don't like this look
+%\usepackage{ae}
+\usepackage{ae}
+
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}                    %   for imported graphics
+\usepackage{amsmath}                     %%
+\usepackage{amsfonts}                    %%  for AMS mathematics
+\usepackage{amssymb}                     %%
+\usepackage{amsthm}
+\usepackage{hyperref}
+
+
+\title[Validation of Magnetospheric MHD Models]{Validation of
+Magnetospheric Magnetohydrodynamic Models}
+\author{Brian Curtis}
+\institute[Universities of]
+{
+School of Physics Astronomy and Computational Sciences\\
+George Mason University}
+\date{April 23rd, 2014 / Final Defense }
+\subject{Dissertation}
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Special Recognition}
+\begin{figure}
+	\includegraphics[scale=.5]{images/overview.jpg}
+\end{figure}
+\textbf{Dissertation Director: Dr. Robert Weigel}\\
+\textbf{Dissertation Committee:}
+\begin{itemize}
+  \item Dr. Jie Zhang
+  \item Dr. Art Poland
+  \item Dr. Ruixin Yang
+\end{itemize}
+\end{frame}
+
+\begin{frame}[shrink]
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+\include{Intro}
+\include{MagMHD}
+\include{VandV}
+\include{Experiments}
+\include{Summary_FutureWork}
+
+\end{document}

@@ -1,0 +1,53 @@
+\section{Validation}
+
+\subsection{Overview}
+\begin{frame}
+	\begin{itemize}
+	  \item \textbf{Verification} analyses ensure that the numerical implementation
+	  of the mathematics are correct.
+	  \begin{itemize}
+	    \item Verification done extensively by model developers.
+	  \end{itemize}
+	  \item \textbf{Validation} analysis encompasses many ways of looking at model
+	  outputs.
+	  \begin{itemize}
+	    \item 15 methods used (\textit{Sargent}, 2003).
+	  \end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Validation Methods}
+\begin{frame}
+\frametitle{Validation}
+\begin{tabular}{p{0.4\textwidth}p{0.5\textwidth}}
+\begin{itemize}
+  \item Animation
+  \item \textbf{Comparison to other models}
+  \item Degenerative tests
+  \item Event validity
+  \item Extreme condition test
+  \item Face validity
+  \item Historical data validation
+  \item Historical methods
+\end{itemize}&
+\begin{itemize}
+  \item Internal validity
+  \item Multistage validation
+  \item Operational graphics
+  \item \textbf{Parameter variability - sensitivity analysis}
+  \item Predictive validation
+  \item Traces
+  \item Turing tests
+\end{itemize}
+\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+	  \item \textbf{Comparison to other models}: The results from other already
+  validated models are used to determine a new models' validity.
+	  \item \textbf{Parameter variability - sensitivity analysis}: Changing the
+  input and internal values of a model to determine the effect of the models
+  output/behavior.
+	\end{itemize}
+\end{frame}
