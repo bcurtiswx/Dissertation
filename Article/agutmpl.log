@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2013.5.30)  25 NOV 2014 09:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2013.5.30)  8 DEC 2014 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -181,8 +181,7 @@ Document Class: agutex 02/09/2008
 \titlesize=\dimen150
 LaTeX Info: Redefining \cite on input line 7505.
 \c@NAT@ctr=\count130
-)
-No file agutmpl.aux.
+) (./agutmpl.aux)
 \openout1 = `agutmpl.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
@@ -203,16 +202,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 188.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 188.
-[1
+ [1
 
-] [2] [3] (./agutmpl.aux) ) 
+] [2] [3] [4] (./agutmpl.aux) ) 
 Here is how much of TeX's memory you used:
- 1097 strings out of 493316
- 12558 string characters out of 6137930
- 76190 words of memory out of 5000000
- 4626 multiletter control sequences out of 15000+600000
+ 1100 strings out of 493316
+ 12599 string characters out of 6137930
+ 78190 words of memory out of 5000000
+ 4627 multiletter control sequences out of 15000+600000
  12970 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 23i,6n,19p,192b,267s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,6n,19p,718b,267s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on agutmpl.dvi (3 pages, 1692 bytes).
+Output written on agutmpl.dvi (4 pages, 5536 bytes).

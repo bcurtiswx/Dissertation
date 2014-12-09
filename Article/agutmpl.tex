@@ -100,7 +100,7 @@
 %% ------------------------------------------------------------------------ %%
 
 % Author names in capital letters:
-\authorrunninghead{CURTIS & WEIGEL 2014}
+\authorrunninghead{CURTIS and WEIGEL 2014}
 
 % Shorter version of title entered in capital letters:
 \titlerunninghead{PRECONDITIONING EFFECTS ON MAGNETOSPHERIC MHD MODELS}
@@ -120,7 +120,7 @@
 %% ------------------------------------------------------------------------ %%
 
 
-\title{Preconditioning effects on magnetospheric magnetohydridynamic models}
+\title{Preconditioning effects on magnetospheric magnetohydrodynamic models}
 %
 % e.g., \title{Terrestrial ring current:
 % Origin, formation, and decay $\alpha\beta\Gamma\Delta$}
@@ -194,16 +194,31 @@
 %% ------------------------------------------------------------------------ %%
 
 \section{Introduction}
-Space weather data is sparse. The sparsity of space weather data impacts space weather prediction. A growing need for improvements in space weather prediction comes from a growing need from personal and commercial use of space-based technologies. Computational physics-based models have been created for the space weather domain to assist in the prediction of space weather variables where data is sparse. Improvements in space weather prediction can be made through expanding available verification and validation methods for these models.
+Forecasting the Sun-Earth domain is difficult. The guidance provided by physics based models are inherently error prone. The predictions made of future solar events have errors. The predictions made of the heliosphere are based on the predictions made from the solar models and have errors. The predictions made of the magnetosphere and ionosphere/thermosphere are based on the predictions made from the heliospheric models. These errors grow as information propagates towards the Earth. This issue is addressed in terrestrial weather models with dense ground based measurements for model input. The cost of adding more satellites to the Sun-Earth domain is expensive thus limiting available data points.
 
-The magnetosphere is the region surrounding the Earth consisting of the Earth's magnetic field. The data available for this region is sparse. Modeling this region is completed today using physics-based models. These models allow for analysis of the magnetosphere without a necessity for dense data. Equations representing the physics of the region are solved to calculate values for space weather variables in many different locations across the modeled domain.
+The magnetosphere is the region surrounding the Earth consisting of the Earth's magnetic field. The data available for this region is sparse. Forecasting this region is completed today using physics-based models. These models use equations representing the physics of the region which are solved to calculate values for space weather variables in many different locations across the modeled domain.
 
-Preconditioning is a process in which the equations are solved during a predetermined time period to allow the physical system it is representing to reach a steady state before input data are used. Without this. 
+There are multiple models of the magnetosphere and each differ greatly. Some differ by their grid choice, some differ in the assumptions made in simplifying the MHD equations. These differences are chosen with goals of comparing best to in-situ data versus other models of the same domain, thus this is the most utilized validation method.
+
+Models are always improving as technology improvements are made yet their predictive ability is still far from high accuracy and precision. Through analysis of all aspects of the modeling process, a stronger confidence can be gained in the results from these models.
+
+In magnetospheric models, a physical system relevant to the inputs to the model can not be initialized as there is a risk of large instabilities. Preconditioning is a process in which the equations are solved during a predetermined time period to allow the physical system it is representing to reach a steady state before input data are used. A stable set of input conditions are used in preconditioning.
+
+This paper aims to show the effects that this preconditioning time has on the errors of the differences between two model outputs from the same model. In the next section, we explain our method of testing preconditioning of multiple models through a model run web interface at the Community Coordinated Modeling Center at NASA Goddard. In section \ref{section:Results} we show the different errors produced when comparing two models through a difference validation method.
 
 \section{Methodology}
-(Section text here)
+The methodologies within this paper are a part of a larger analysis of model validation of magnetospheric MHD models \cite{DissertationHERE}. Ensemble modeling is the act of inputting the same event into multiple models and plotting all of their results together. A different angle on that approach, with a goal of minimizing the degrees of freedom, is to use inputs that are not based off in-situ data but data that represent a typical magnetospheric event with minimal changes in input variable as possible. For this study, a $B_z$ reversal from positive to negative is used.
+
+In magnetohydrodynamics, for example, the temperature, density, pressure and velocity of the solar wind all change and can effect one another through time. To simplify the analysis of this data set, all input variables were kept at constant values except for $B_z$. The values each variable were set at were decided from an 11 year data set in which mean and +/- 30 \% were calculated for each variable.
+
+To simplify the need to build and compile multiple codes for each model, as well as obtaining the computational resources required for all models, a decision was made to use a web interface that allows users to run magnetospheric models provided by the Community Coordinated Modeling Center at NASA Goddard. This also helps to satisfy the requirements to minimize the degrees of freedom in all runs using the same computer system.
+
+-Grid Differences --> Interpolation
+
+
 
 \section{Results}
+\label{section:Results}
 (Section text here)
 
 \section{Discussion and Conclusions}
