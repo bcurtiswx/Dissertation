@@ -45,8 +45,8 @@
 %
 % (If you are submitting to a journal other than jgrga,
 % substitute the initials of the journal for "jgrga" below.)
-
-\documentclass[draft,jgrga]{AGUTeX}
+\documentclass[jgrga]{agutex}
+%\documentclass[draft,jgrga]{agutex}
 % To create numbered lines:
 
 % If you don't already have lineno.sty, you can download it from
@@ -112,6 +112,8 @@
 %(a.b.smith@hwr.arizona.edu)}
 
 \begin{document}
+%\bibliographystyle{BibTeX/agufull08}
+%\bibliography{bibfile}
 
 %% ------------------------------------------------------------------------ %%
 %
@@ -204,16 +206,36 @@ Models are always improving as technology improvements are made yet their predic
 
 In magnetospheric models, a physical system relevant to the inputs to the model can not be initialized as there is a risk of large instabilities. Preconditioning is a process in which the equations are solved during a predetermined time period to allow the physical system it is representing to reach a steady state before input data are used. A stable set of input conditions are used in preconditioning.
 
+According to \cite{Raeder2003} and \cite{Buchner2003}, a magnetosphere will form approximately one hour from the start of MHD simulation preconditioning. Buchner put into question that the magnetosphere has a long memory of previous conditions, it could take approximately 3 or more hours of preconditioning time to have stabilization in the magnetosphere. However, there has been no published research on the appropriate time or influences of preconditioning time on model predictions.
+
 This paper aims to show the effects that this preconditioning time has on the errors of the differences between two model outputs from the same model. In the next section, we explain our method of testing preconditioning of multiple models through a model run web interface at the Community Coordinated Modeling Center at NASA Goddard. In section \ref{section:Results} we show the different errors produced when comparing two models through a difference validation method.
 
 \section{Methodology}
-The methodologies within this paper are a part of a larger analysis of model validation of magnetospheric MHD models \cite{DissertationHERE}. Ensemble modeling is the act of inputting the same event into multiple models and plotting all of their results together. A different angle on that approach, with a goal of minimizing the degrees of freedom, is to use inputs that are not based off in-situ data but data that represent a typical magnetospheric event with minimal changes in input variable as possible. For this study, a $B_z$ reversal from positive to negative is used.
+The methodologies within this paper are a part of a larger analysis of model validation of magnetospheric MHD models (DISSERTATION CITATION). One way to view and compare multiple model outputs is through an ensemble of models. Ensemble modeling is the act of inputting the same event into multiple models and plotting all of their results together for easy comparison. The number of degrees of freedom in models can be high as the number of scalar and vector quantities change through a model run.
 
-In magnetohydrodynamics, for example, the temperature, density, pressure and velocity of the solar wind all change and can effect one another through time. To simplify the analysis of this data set, all input variables were kept at constant values except for $B_z$. The values each variable were set at were decided from an 11 year data set in which mean and +/- 30 \% were calculated for each variable.
+A different approach, with a goal of minimizing the degrees of freedom, is to use inputs that are not based off in-situ data but data that represents a magnetospheric event with minimal changes in input variable as possible. For this study, a $B_z$ reversal from positive to negative is used as input into multiple magnetospheric MHD models. The values each variable were set are shown in table \ref{table:histtable}.
 
-To simplify the need to build and compile multiple codes for each model, as well as obtaining the computational resources required for all models, a decision was made to use a web interface that allows users to run magnetospheric models provided by the Community Coordinated Modeling Center at NASA Goddard. This also helps to satisfy the requirements to minimize the degrees of freedom in all runs using the same computer system.
+\begin{table}
+\begin{center}
+  \caption{ACE solar wind measurement histogram means and $\pm$ 30\%}
+  \begin{tabular}{| l | c | c | c | }
+    \hline
+    \textbf{Variable} & \textbf{20th Percentile} & \textbf{Mean} &
+    \textbf{80th Percentile} \\
+    \hline $\rho$ [$cm^{-3}$] & 2 & 5.76  & 11   \\ \hline
+    $T$ [$K$] & 20554 & 101289  & 217139 \\ \hline
+    $V_x$ [$km/s$] & 310 & 442 & 604 \\ \hline
+    $B_z$ [$nT$] & -3.0 & 0.02 & 3.1 \\ \hline
+  \end{tabular}
+  \label{table:histtable}
+\end{center}
+\end{table}
 
--Grid Differences --> Interpolation
+To address the cost of building and compiling multiple codes for each model, as well as obtaining the computational resources required for all models, the use of a web interface that allows users to run magnetospheric models provided by the Community Coordinated Modeling Center (CCMC) at NASA Goddard was chosen.
+
+To address a concern, as a part of the dissertation, a point difference validation needed model results to be interpolated onto the same grid. A second reason that the CCMC was chosen is they provide a software, called Kameleon (CITATION NEEDED) that can interpolate certain models onto a grid of choice. Specifically, the magnetospheric models chosen for this study have all been integrated into the software.
+
+
 
 
 
@@ -292,6 +314,16 @@ To simplify the need to build and compile multiple codes for each model, as well
 % AGU does not want a .bib or a .bbl file. Please copy in the contents of your .bbl file here.
 
 \begin{thebibliography}{}
+
+\bibitem[{\textit{Buchner et~al.}(2003)\textit{Buchner, Dum, and
+  Scholer}}]{Buchner2003}
+Buchner, J., T.~Dum, and M.~Scholer (2003), \textit{Space Plasma Simulation},
+  Springer-Verlag.
+
+\bibitem[{\textit{Raeder}(2003)}]{Raeder2003}
+Raeder, J. (2003), \textit{Global Magnetohydrodynamics - A Tutorial}, Space
+  Plasma Simulation edited by: J. Buchner, C. T. Dum, and M. Scholer, Lecture
+  Notes in Physics 615.
 
 %\providecommand{\natexlab}[1]{#1}
 %\expandafter\ifx\csname urlstyle\endcsname\relax
